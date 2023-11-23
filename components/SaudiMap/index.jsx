@@ -33,18 +33,14 @@ const SaudiMap = ({ }) => {
 
         <div className={styles.map_boxes} id='map-boxes'>
           <TransformWrapper
-            transform={`translate(-98.2px, 19.8px) scale(0.8)`}
             ref={transformComponentRef}
             wheel={{ wheelDisabled: true }}
-            pan={{ disabled: false }}
             zoomIn={{ step: 100 }}
             zoomOut={{ step: 100 }}
-            centerOnInit={false}
             minScale={0.5}
-            maxScale={1}
-            initialScale={0.8}
+            maxScale={1.5}
+            initialScale={1}
             wrapperStyle={{ maxWidth: '100%', maxHeight: 'calc(100vh - 50px)' }}
-            state={stateObj}
             doubleClick={{ disabled: false, mode: "reset" }}
           >
 

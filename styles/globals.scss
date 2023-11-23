@@ -156,6 +156,8 @@ body::-webkit-scrollbar-track {
   #svg1 {
     // transform: translate(-328.01px, -9px) !important;
     // scale: 0.4 !important;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -163,6 +165,8 @@ body::-webkit-scrollbar-track {
 }
 
 .land {
+  transition: transform 0.3s ease-in-out !important;
+
   .city-name {
     -webkit-transition: -webkit-transform 0.3s ease-in-out !important;
     transition: -webkit-transform 0.3s ease-in-out !important;
@@ -333,9 +337,9 @@ body::-webkit-scrollbar-track {
   transform: scale(1.02) translate(-6px, -11px) !important;
 }
 .land.activeLand:nth-child(4) {
-  -webkit-transform: scale(1.02) translate(-5px, -11px) !important;
-  -ms-transform: scale(1.02) translate(-5px, -11px) !important;
-  transform: scale(1.02) translate(-5px, -11px) !important;
+  -webkit-transform: scale(1.02) translate(-4px, 0px) !important;
+  -ms-transform: scale(1.02) translate(-4px, 0px) !important;
+  transform: scale(1.02) translate(-4px, 0px) !important;
 }
 .land.activeLand:nth-child(5) {
   -webkit-transform: scale(1.02) translate(-1%, -2%) !important;
@@ -351,36 +355,6 @@ body::-webkit-scrollbar-track {
   -webkit-transform: scale(1.02) translateX(-2px) translateY(-10px) !important;
   -ms-transform: scale(1.02) translateX(-2px) translateY(-10px) !important;
   transform: scale(1.02) translateX(-2px) translateY(-10px) !important;
-}
-.land.activeLand:nth-child(8) {
-  -webkit-transform: scale(1.02) translate(-1%, -2%) !important;
-  -ms-transform: scale(1.02) translate(-1%, -2%) !important;
-  transform: scale(1.02) translate(-1%, -2%) !important;
-}
-.land.activeLand:nth-child(9) {
-  -webkit-transform: scale(1.02) translate(-1%, -2%) !important;
-  -ms-transform: scale(1.02) translate(-1%, -2%) !important;
-  transform: scale(1.02) translate(-1%, -2%) !important;
-}
-.land.activeLand:nth-child(10) {
-  -webkit-transform: scale(1.2) translate(-66px, -119px) !important;
-  -ms-transform: scale(1.2) translate(-66px, -119px) !important;
-  transform: scale(1.2) translate(-66px, -119px) !important;
-}
-.land.activeLand:nth-child(11) {
-  -webkit-transform: scale(1.02) translate(-7px, -14px) !important;
-  -ms-transform: scale(1.02) translate(-7px, -14px) !important;
-  transform: scale(1.02) translate(-7px, -14px) !important;
-}
-.land.activeLand:nth-child(12) {
-  -webkit-transform: scale(1.02) translate(-1%, -2%) !important;
-  -ms-transform: scale(1.02) translate(-1%, -2%) !important;
-  transform: scale(1.02) translate(-1%, -2%) !important;
-}
-.land.activeLand:nth-child(13) {
-  -webkit-transform: scale(1.02) translate(-1%, -2%) !important;
-  -ms-transform: scale(1.02) translate(-1%, -2%) !important;
-  transform: scale(1.02) translate(-1%, -2%) !important;
 }
 
 .land:hover,
@@ -418,60 +392,14 @@ foreignObject {
 
 .land.activeLand {
   path {
-    stroke-width: 2 !important;
-    stroke: #ffffff !important;
+    // stroke-width: 2 !important;
+    // stroke: #ffffff !important;
   }
 }
 
-.city-name {
-  background: #fff;
-  color: #bb7165;
-  font-size: 16px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 26px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 2px 11px;
-  border-radius: 35px;
-  cursor: pointer;
-  font-family: var(--effra-font) !important;
-}
 .city-name svg {
   top: 94% !important;
   position: absolute;
   height: 10.33px;
   width: 29.22px;
-}
-.city-name {
-  background: #fff;
-  color: #bb7165;
-  font-size: 16px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 26px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 2px 11px;
-  border-radius: 35px;
-  cursor: pointer;
-  font-family: var(--effra-font) !important;
 }
