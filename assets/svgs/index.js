@@ -2,6 +2,16 @@ import Boxes from "./Boxes";
 import Feather from "./Feather";
 import SaveMark from "./SaveMark";
 import Subtract from "./Subtract";
-import Vector from "./Vector";
+import TimeSquare from "./TimeSquare";
+import Arrow_down from "./Arrow_down";
+import SaudiIconMap from "./SaudiIconMap";
 
-export { Boxes, Feather, SaveMark, Subtract, Vector };
+export {
+  Boxes,
+  Feather,
+  SaveMark,
+  Subtract,
+  Arrow_down,
+  SaudiIconMap,
+  TimeSquare,
+};

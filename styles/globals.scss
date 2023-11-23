@@ -48,7 +48,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #f6f8fc;
+  background-color: rgba(250, 251, 252, 1);
 }
 
 a {
@@ -390,11 +390,12 @@ foreignObject {
   overflow: unset !important;
 }
 
-.land.activeLand {
-  path {
-    // stroke-width: 2 !important;
-    // stroke: #ffffff !important;
-  }
+.land path {
+  transition: stroke 0.5s ease-in-out !important;
+}
+.land.activeLand path:not(.city-name path) {
+  stroke-width: 2 !important;
+  stroke: #ffffff !important;
 }
 
 .city-name svg {
