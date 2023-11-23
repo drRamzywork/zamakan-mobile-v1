@@ -82,7 +82,17 @@ const PageHeader = () => {
 
             </div>
             <div className={styles.more_btn}>
-              <Button onClick={toggleText}>اقرأ المزيد</Button>
+              <Button onClick={toggleText}>
+                {showText === true ?
+                  'اقرأ أقل '
+
+                  :
+
+                  'اقرأ المزيد '
+
+                }
+
+              </Button>
               <div className={`${styles.icon_container} ${showText === true && styles.active}`}>
                 <Arrow_down />
               </div>
