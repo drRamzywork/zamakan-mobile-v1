@@ -33,7 +33,7 @@ const Slider = ({ landElments }) => {
     },
     smallMobile2: {
       breakpoint: { max: 250, min: 0 },
-      items: 4,
+      items: 3,
     }
   };
   const { contextValue,
@@ -49,7 +49,30 @@ const Slider = ({ landElments }) => {
     setCityNames,
     handleZoomToLand, } = useMapContext();
 
-
+  const landData = [
+    { name: 'الرياض', },
+    { name: 'الشرقية', },
+    { name: 'القصيم', },
+    { name: 'عسير', },
+    { name: 'حائل', },
+    { name: 'تبوك', },
+    { name: 'الرياض', },
+    { name: 'الشرقية', },
+    { name: 'القصيم', },
+    { name: 'عسير', },
+    { name: 'حائل', },
+    { name: 'تبوك', },
+    { name: 'الرياض', },
+    { name: 'الشرقية', },
+    { name: 'القصيم', },
+    { name: 'عسير', },
+    { name: 'حائل', },
+    { name: 'تبوك', },
+    { name: 'مكة المكرمة', },
+    { name: 'المدينة المنورة', },
+    { name: 'المدينة المنورة', },
+    { name: 'المدينة المنورة', },
+  ];
 
 
 
@@ -94,7 +117,7 @@ const Slider = ({ landElments }) => {
 
               <div className={`${styles.slider} ${index === activeIndex ? styles.active : ''}`} key={index} onClick={() => handleZoomToLand(index)}>
                 <div className={styles.name}>
-                  <Typography>الرياض </Typography>
+                  <Typography>{landData[index].name}</Typography>
                 </div>
               </div>
 
