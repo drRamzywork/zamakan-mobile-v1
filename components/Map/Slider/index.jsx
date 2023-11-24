@@ -113,16 +113,15 @@ const Slider = ({ landElments }) => {
           </div>
           {Array.from({ length: landElments.length }).map((_, index) => (
 
-            <>
-
-              <div className={`${styles.slider} ${index === activeIndex ? styles.active : ''}`} key={index} onClick={() => handleZoomToLand(index)}>
-                <div className={styles.name}>
-                  <Typography>{landData[index].name}</Typography>
-                </div>
+            <div className={`${styles.slider} ${index === activeIndex ? styles.active : ''}`} key={index} onClick={() => handleZoomToLand(index)}>
+              <div className={styles.name}>
+                <Typography>{landData[index].name}</Typography>
               </div>
+            </div>
 
-            </>
           ))}
+
+
         </Carousel>
       </div >
     </>

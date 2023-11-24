@@ -16,34 +16,7 @@ export const useMapContext = () => {
 
 // Create a provider component that will wrap your application
 export const MapContextProvider = ({ children }) => {
-  const [someValue, setSomeValue] = useState("Default Value");
-
-  const updateValue = (newValue) => {
-    setSomeValue(newValue);
-  };
-
-  // The value prop of the Provider will be available to all descendants
-  const contextValue = {
-    someValue,
-    updateValue,
-  };
-
   const containerRef = useRef(null);
-  const handleClick = () => {
-    // Navigate to the specified route
-    // router.push("/city");
-  };
-
-  useEffect(() => {
-    const elements = document.querySelectorAll(".city-name");
-    const container = containerRef.current;
-
-    elements.forEach((element) => {
-      element.addEventListener("click", () => {
-        handleClick();
-      });
-    });
-  }, []);
 
   // SVG ZOOM
   const [landElments, setLandElemnts] = useState([]);
@@ -124,7 +97,6 @@ export const MapContextProvider = ({ children }) => {
   return (
     <MapContext.Provider
       value={{
-        contextValue,
         landElments,
         setLandElemnts,
         activeIndex,
