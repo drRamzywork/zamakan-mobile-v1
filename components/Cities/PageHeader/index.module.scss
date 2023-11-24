@@ -1,4 +1,17 @@
 header#cities {
+  position: relative;
+  .back_arrow {
+    position: absolute;
+    top: 37px;
+    left: 24px;
+    z-index: 111;
+
+    svg {
+      path {
+        fill: rgba(187, 113, 101, 1) !important;
+      }
+    }
+  }
   .sec_container {
     background-color: #ffffff;
     display: flex;

@@ -2,9 +2,10 @@ import { Container, Typography } from '@mui/material'
 import React, { useEffect, useRef, useState } from 'react'
 import styles from './index.module.scss'
 import imgs from '../../../assets/constants/imgs'
-import { Arrow_down } from '@/assets/svgs'
+import { Arrow_down, BackArrow } from '@/assets/svgs'
 import { Button } from '@mui/base'
 import { motion } from 'framer-motion';
+import Link from 'next/link'
 
 
 const PageHeader = () => {
@@ -35,6 +36,9 @@ const PageHeader = () => {
 
   return (
     <header id={styles.cities} dir='rtl' className={styles.PoetryIn} >
+      <Link href='/' className={styles.back_arrow}>
+        <BackArrow />
+      </Link>
       <div className={styles.sec_container}>
         <div className={styles.img_container}>
           <div className={styles.img_box}>
