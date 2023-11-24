@@ -5,12 +5,6 @@ import Navbar from "@/components/Navbar";
 import Svg from "@/components/SVGParts/Svg";
 import { Container } from "@mui/material";
 import HomePage from "@/components/HomePage";
-const inter = Inter({ subsets: ["latin"] });
-
-const tajawal = Tajawal({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-});
 
 export default function Home() {
   return (

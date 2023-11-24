@@ -28,22 +28,6 @@ body {
   width: 100%;
   position: relative;
   overflow: hidden;
-
-  background-image: url(../assets/images/Texture.png);
-  background-repeat: no-repeat;
-}
-
-#__next:after {
-  content: "";
-  position: absolute;
-  top: 60%;
-  left: 0;
-  background-color: red !important;
-
-  opacity: 0.25;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
 }
 
 body {
@@ -403,4 +387,33 @@ foreignObject {
   position: absolute;
   height: 10.33px;
   width: 29.22px;
+}
+
+// MUI
+.MuiTabs-indicator {
+  display: none;
+}
+
+// Swiper
+
+.swiper-pagination {
+  .swiper-pagination-bullet {
+    background: transparent;
+    border: 1px solid rgba(187, 113, 101, 1);
+    width: 6px;
+    height: 6px;
+
+    &-active {
+      background: rgba(187, 113, 101, 1);
+    }
+  }
+}
+
+.poetry_details {
+  .swiper-slide {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
 }

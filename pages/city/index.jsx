@@ -38,7 +38,6 @@ const Cities = () => {
         <Verses />
       </div >
 
-      <Footer />
     </>
 
   )

@@ -51,7 +51,6 @@ const PageHeader = () => {
               delay: 0.5,
               ease: [0, 0.71, 0.2, 1.01]
             }}
-
             className={styles.text_container}>
             <div className={styles.title}>
               <Typography variant='h3'>وَجْرَة</Typography>
@@ -61,8 +60,6 @@ const PageHeader = () => {
             </div>
 
             <div
-
-
               className={styles.desc} >
               <Typography >وتسمى اليوم ركبه</Typography>
               <Typography

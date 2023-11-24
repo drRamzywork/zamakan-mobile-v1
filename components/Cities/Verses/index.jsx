@@ -5,6 +5,7 @@ import { imgs } from '@/assets/constants'
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Link from 'next/link';
 const Verses = () => {
   const { ra3y } = imgs;
 
@@ -37,11 +38,18 @@ const Verses = () => {
     tablet: {
       breakpoint: { max: 460, min: 400 },
       items: 1.5,
+      partialVisibilityGutter: 16
+
     },
     mobile: {
       breakpoint: { max: 390, min: 0 },
-      items: 1.1,
-      partialVisibilityGutter: 30
+      items: 1.5,
+      partialVisibilityGutter: 16
+    },
+    mobile_small: {
+      breakpoint: { max: 300, min: 0 },
+      items: 1,
+      partialVisibilityGutter: 16
     },
   };
 
@@ -54,55 +62,48 @@ const Verses = () => {
 
             <div className={styles.info_sec}>
 
-              <div className={styles.boxes_container}>
+
+              <div className={styles.boxes_bref}>
+                <div className={styles.box}>
+                  <div className={styles.title}>
+                    <Typography>موقعه</Typography>
+                  </div>
+
+                  <div className={styles.desc}>
+                    <Typography>الجزء الغربي من نجد</Typography>
+                  </div>
+                </div>
 
                 <div className={styles.box}>
                   <div className={styles.title}>
-                    <Typography >الاسم السابق</Typography>
+                    <Typography>المنطقة الإدارية</Typography>
                   </div>
-                  <div className={styles.name}>
-                    <Typography>وجرة</Typography>
-                  </div>
-                </div>
-                <div className={styles.box}>
-                  <div className={styles.title}>
-                    <Typography>الاسم الحالي</Typography>
-                  </div>
-                  <div className={styles.name}>
-                    <Typography>ركبه</Typography>
+
+                  <div className={styles.desc}>
+                    <Typography>الرياض</Typography>
                   </div>
                 </div>
                 <div className={styles.box}>
                   <div className={styles.title}>
-                    <Typography>أسماء أخرى</Typography>
+                    <Typography>وصفه</Typography>
                   </div>
-                  <div className={styles.name}>
-                    <Typography>سهل ركبه</Typography>
-                  </div>
-                </div>
-                <div className={styles.box}>
-                  <div className={styles.title}>
-                    <Typography>المنطقة الإدراية</Typography>
-                  </div>
-                  <div className={styles.name}>
-                    <Typography>مكة المكرمة</Typography>
+
+                  <div className={styles.desc}>
+                    <Typography>جبل يميل لونه إلى السواد يقع أرض صحراوية</Typography>
                   </div>
                 </div>
-                <div className={styles.box}>
-                  <div className={styles.title}>
-                    <Typography>قيمة المكان</Typography>
-                  </div>
-                  <div className={styles.name}>
-                    <Typography>مكان مناسب قديمًا للرعي لوفرة مائه وأشجاره</Typography>
-                  </div>
-                </div>
+
+
+              </div>
+              <div className={styles.boxes_container}>
 
                 <div className={styles.box}>
                   <div className={styles.title}>
                     <Typography>وصف المكان قديمًا</Typography>
                   </div>
-                  <div className={styles.name}>
-                    <Typography>مكان مناسب قديمًا للرعي لوفرة مائه وأشجاره</Typography>
+
+                  <div className={styles.desc}>
+                    <Typography>جبل يقع في أرض صحراوية مستوية وواسعة المساحة.</Typography>
                   </div>
                 </div>
 
@@ -110,18 +111,13 @@ const Verses = () => {
                   <div className={styles.title}>
                     <Typography>وصف المكان حديثًا</Typography>
                   </div>
-                  <div className={styles.name}>
-                    <Typography>غير موجود وهو ضمن سهل ركبة</Typography>
+
+                  <div className={styles.desc}>
+                    <Typography>جبل يقع في أرض صحراوية مستوية وواسعة المساحة.</Typography>
                   </div>
                 </div>
-                <div className={styles.box}>
-                  <div className={styles.title}>
-                    <Typography>الموقع</Typography>
-                  </div>
-                  <div className={styles.name}>
-                    <Typography>شمال الطائف</Typography>
-                  </div>
-                </div>
+
+
 
               </div>
             </div>
@@ -150,7 +146,7 @@ const Verses = () => {
               >
                 <div className={styles.box}>
                   <div className={styles.box_container}>
-                    <div className={styles.info}>
+                    <Link href='/poet' className={styles.info}>
                       <div className={styles.img_container}>
                         <img src={ra3y.src} alt="ra3y" />
                       </div>
@@ -163,7 +159,7 @@ const Verses = () => {
                           <Typography>العصر الأموي</Typography>
                         </div>
                       </div>
-                    </div>
+                    </Link>
 
                     <div className={styles.desc}>
                       <Typography>ذكرها امرؤُ القيسِ في معلَّقته، عندما وصفَ محبوبته بأنها تنظرُ إليه بعينِ ظبيةٍ من ظباءِ وَجْرةَ معها طفلُها، لأن عينَي الظبية تكونان في غايةِ الجمال إذا نظرَت إلى أولادها نظرةَ العطف والشفقة</Typography>
@@ -182,7 +178,7 @@ const Verses = () => {
                 </div>
                 <div className={styles.box}>
                   <div className={styles.box_container}>
-                    <div className={styles.info}>
+                    <Link href='/poet' className={styles.info}>
                       <div className={styles.img_container}>
                         <img src={ra3y.src} alt="ra3y" />
                       </div>
@@ -195,7 +191,7 @@ const Verses = () => {
                           <Typography>العصر الأموي</Typography>
                         </div>
                       </div>
-                    </div>
+                    </Link>
 
                     <div className={styles.desc}>
                       <Typography>ذكرها امرؤُ القيسِ في معلَّقته، عندما وصفَ محبوبته بأنها تنظرُ إليه بعينِ ظبيةٍ من ظباءِ وَجْرةَ معها طفلُها، لأن عينَي الظبية تكونان في غايةِ الجمال إذا نظرَت إلى أولادها نظرةَ العطف والشفقة</Typography>
@@ -213,7 +209,7 @@ const Verses = () => {
                 </div>
                 <div className={styles.box}>
                   <div className={styles.box_container}>
-                    <div className={styles.info}>
+                    <Link href='/poet' className={styles.info}>
                       <div className={styles.img_container}>
                         <img src={ra3y.src} alt="ra3y" />
                       </div>
@@ -226,7 +222,7 @@ const Verses = () => {
                           <Typography>العصر الأموي</Typography>
                         </div>
                       </div>
-                    </div>
+                    </Link>
 
                     <div className={styles.desc}>
                       <Typography>ذكرها امرؤُ القيسِ في معلَّقته، عندما وصفَ محبوبته بأنها تنظرُ إليه بعينِ ظبيةٍ من ظباءِ وَجْرةَ معها طفلُها، لأن عينَي الظبية تكونان في غايةِ الجمال إذا نظرَت إلى أولادها نظرةَ العطف والشفقة</Typography>
@@ -244,7 +240,7 @@ const Verses = () => {
                 </div>
                 <div className={styles.box}>
                   <div className={styles.box_container}>
-                    <div className={styles.info}>
+                    <Link href='/poet' className={styles.info}>
                       <div className={styles.img_container}>
                         <img src={ra3y.src} alt="ra3y" />
                       </div>
@@ -257,7 +253,7 @@ const Verses = () => {
                           <Typography>العصر الأموي</Typography>
                         </div>
                       </div>
-                    </div>
+                    </Link>
 
                     <div className={styles.desc}>
                       <Typography>ذكرها امرؤُ القيسِ في معلَّقته، عندما وصفَ محبوبته بأنها تنظرُ إليه بعينِ ظبيةٍ من ظباءِ وَجْرةَ معها طفلُها، لأن عينَي الظبية تكونان في غايةِ الجمال إذا نظرَت إلى أولادها نظرةَ العطف والشفقة</Typography>
@@ -275,7 +271,7 @@ const Verses = () => {
                 </div>
                 <div className={styles.box}>
                   <div className={styles.box_container}>
-                    <div className={styles.info}>
+                    <Link href='/poet' className={styles.info}>
                       <div className={styles.img_container}>
                         <img src={ra3y.src} alt="ra3y" />
                       </div>
@@ -288,7 +284,7 @@ const Verses = () => {
                           <Typography>العصر الأموي</Typography>
                         </div>
                       </div>
-                    </div>
+                    </Link>
 
                     <div className={styles.desc}>
                       <Typography>ذكرها امرؤُ القيسِ في معلَّقته، عندما وصفَ محبوبته بأنها تنظرُ إليه بعينِ ظبيةٍ من ظباءِ وَجْرةَ معها طفلُها، لأن عينَي الظبية تكونان في غايةِ الجمال إذا نظرَت إلى أولادها نظرةَ العطف والشفقة</Typography>
@@ -306,7 +302,7 @@ const Verses = () => {
                 </div>
                 <div className={styles.box}>
                   <div className={styles.box_container}>
-                    <div className={styles.info}>
+                    <Link href='/poet' className={styles.info}>
                       <div className={styles.img_container}>
                         <img src={ra3y.src} alt="ra3y" />
                       </div>
@@ -319,7 +315,7 @@ const Verses = () => {
                           <Typography>العصر الأموي</Typography>
                         </div>
                       </div>
-                    </div>
+                    </Link>
 
                     <div className={styles.desc}>
                       <Typography>ذكرها امرؤُ القيسِ في معلَّقته، عندما وصفَ محبوبته بأنها تنظرُ إليه بعينِ ظبيةٍ من ظباءِ وَجْرةَ معها طفلُها، لأن عينَي الظبية تكونان في غايةِ الجمال إذا نظرَت إلى أولادها نظرةَ العطف والشفقة</Typography>
@@ -337,7 +333,7 @@ const Verses = () => {
                 </div>
                 <div className={styles.box}>
                   <div className={styles.box_container}>
-                    <div className={styles.info}>
+                    <Link href='/poet' className={styles.info}>
                       <div className={styles.img_container}>
                         <img src={ra3y.src} alt="ra3y" />
                       </div>
@@ -350,7 +346,7 @@ const Verses = () => {
                           <Typography>العصر الأموي</Typography>
                         </div>
                       </div>
-                    </div>
+                    </Link>
 
                     <div className={styles.desc}>
                       <Typography>ذكرها امرؤُ القيسِ في معلَّقته، عندما وصفَ محبوبته بأنها تنظرُ إليه بعينِ ظبيةٍ من ظباءِ وَجْرةَ معها طفلُها، لأن عينَي الظبية تكونان في غايةِ الجمال إذا نظرَت إلى أولادها نظرةَ العطف والشفقة</Typography>
@@ -368,7 +364,7 @@ const Verses = () => {
                 </div>
                 <div className={styles.box}>
                   <div className={styles.box_container}>
-                    <div className={styles.info}>
+                    <Link href='/poet' className={styles.info}>
                       <div className={styles.img_container}>
                         <img src={ra3y.src} alt="ra3y" />
                       </div>
@@ -381,7 +377,7 @@ const Verses = () => {
                           <Typography>العصر الأموي</Typography>
                         </div>
                       </div>
-                    </div>
+                    </Link>
 
                     <div className={styles.desc}>
                       <Typography>ذكرها امرؤُ القيسِ في معلَّقته، عندما وصفَ محبوبته بأنها تنظرُ إليه بعينِ ظبيةٍ من ظباءِ وَجْرةَ معها طفلُها، لأن عينَي الظبية تكونان في غايةِ الجمال إذا نظرَت إلى أولادها نظرةَ العطف والشفقة</Typography>
