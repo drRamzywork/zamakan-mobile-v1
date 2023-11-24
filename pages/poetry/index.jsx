@@ -44,9 +44,9 @@ const Poetry = () => {
   return (
     <>
       <header className={styles.poetry_details}>
-        <div className={styles.icon_container}>
+        <Link href='/poet' className={styles.icon_container}>
           <BackArrow />
-        </div>
+        </Link>
       </header>
       <section dir='rtl' id='poetry_details' className={styles.poetry_details} style={{ Effra }}>
         <Container sx={{ maxWidth: "1400px" }} maxWidth={false} >
