@@ -164,7 +164,7 @@ const Verses = () => {
                     <div className={styles.desc}>
                       <Typography>ذكرها امرؤُ القيسِ في معلَّقته، عندما وصفَ محبوبته بأنها تنظرُ إليه بعينِ ظبيةٍ من ظباءِ وَجْرةَ معها طفلُها، لأن عينَي الظبية تكونان في غايةِ الجمال إذا نظرَت إلى أولادها نظرةَ العطف والشفقة</Typography>
                     </div>
-                    <div className={styles.said}>
+                    <Link href='/poetry' className={styles.said}>
                       <div className={styles.title}>
                         <Typography>يقول</Typography>
                       </div>
@@ -172,7 +172,7 @@ const Verses = () => {
                         <Typography>تَصُــدُّ وتُبْــدي عَن أَسِيــــلٍ وتَتَّقـي <br />
                           بِناظِرَةٍ من وَحشِ وَجْرَةَ مُطْفِلِ</Typography>
                       </div>
-                    </div>
+                    </Link>
 
                   </div>
                 </div>
@@ -196,7 +196,7 @@ const Verses = () => {
                     <div className={styles.desc}>
                       <Typography>ذكرها امرؤُ القيسِ في معلَّقته، عندما وصفَ محبوبته بأنها تنظرُ إليه بعينِ ظبيةٍ من ظباءِ وَجْرةَ معها طفلُها، لأن عينَي الظبية تكونان في غايةِ الجمال إذا نظرَت إلى أولادها نظرةَ العطف والشفقة</Typography>
                     </div>
-                    <div className={styles.said}>
+                    <Link href='/poetry' className={styles.said}>
                       <div className={styles.title}>
                         <Typography>يقول</Typography>
                       </div>
@@ -204,7 +204,8 @@ const Verses = () => {
                         <Typography>تَصُــدُّ وتُبْــدي عَن أَسِيــــلٍ وتَتَّقـي <br />
                           بِناظِرَةٍ من وَحشِ وَجْرَةَ مُطْفِلِ</Typography>
                       </div>
-                    </div>
+                    </Link>
+
                   </div>
                 </div>
                 <div className={styles.box}>
@@ -227,7 +228,7 @@ const Verses = () => {
                     <div className={styles.desc}>
                       <Typography>ذكرها امرؤُ القيسِ في معلَّقته، عندما وصفَ محبوبته بأنها تنظرُ إليه بعينِ ظبيةٍ من ظباءِ وَجْرةَ معها طفلُها، لأن عينَي الظبية تكونان في غايةِ الجمال إذا نظرَت إلى أولادها نظرةَ العطف والشفقة</Typography>
                     </div>
-                    <div className={styles.said}>
+                    <Link href='/poetry' className={styles.said}>
                       <div className={styles.title}>
                         <Typography>يقول</Typography>
                       </div>
@@ -235,7 +236,8 @@ const Verses = () => {
                         <Typography>تَصُــدُّ وتُبْــدي عَن أَسِيــــلٍ وتَتَّقـي <br />
                           بِناظِرَةٍ من وَحشِ وَجْرَةَ مُطْفِلِ</Typography>
                       </div>
-                    </div>
+                    </Link>
+
                   </div>
                 </div>
                 <div className={styles.box}>
@@ -258,7 +260,7 @@ const Verses = () => {
                     <div className={styles.desc}>
                       <Typography>ذكرها امرؤُ القيسِ في معلَّقته، عندما وصفَ محبوبته بأنها تنظرُ إليه بعينِ ظبيةٍ من ظباءِ وَجْرةَ معها طفلُها، لأن عينَي الظبية تكونان في غايةِ الجمال إذا نظرَت إلى أولادها نظرةَ العطف والشفقة</Typography>
                     </div>
-                    <div className={styles.said}>
+                    <Link href='/poetry' className={styles.said}>
                       <div className={styles.title}>
                         <Typography>يقول</Typography>
                       </div>
@@ -266,7 +268,8 @@ const Verses = () => {
                         <Typography>تَصُــدُّ وتُبْــدي عَن أَسِيــــلٍ وتَتَّقـي <br />
                           بِناظِرَةٍ من وَحشِ وَجْرَةَ مُطْفِلِ</Typography>
                       </div>
-                    </div>
+                    </Link>
+
                   </div>
                 </div>
                 <div className={styles.box}>
@@ -289,7 +292,7 @@ const Verses = () => {
                     <div className={styles.desc}>
                       <Typography>ذكرها امرؤُ القيسِ في معلَّقته، عندما وصفَ محبوبته بأنها تنظرُ إليه بعينِ ظبيةٍ من ظباءِ وَجْرةَ معها طفلُها، لأن عينَي الظبية تكونان في غايةِ الجمال إذا نظرَت إلى أولادها نظرةَ العطف والشفقة</Typography>
                     </div>
-                    <div className={styles.said}>
+                    <Link href='/poetry' className={styles.said}>
                       <div className={styles.title}>
                         <Typography>يقول</Typography>
                       </div>
@@ -297,7 +300,8 @@ const Verses = () => {
                         <Typography>تَصُــدُّ وتُبْــدي عَن أَسِيــــلٍ وتَتَّقـي <br />
                           بِناظِرَةٍ من وَحشِ وَجْرَةَ مُطْفِلِ</Typography>
                       </div>
-                    </div>
+                    </Link>
+
                   </div>
                 </div>
                 <div className={styles.box}>
@@ -320,7 +324,7 @@ const Verses = () => {
                     <div className={styles.desc}>
                       <Typography>ذكرها امرؤُ القيسِ في معلَّقته، عندما وصفَ محبوبته بأنها تنظرُ إليه بعينِ ظبيةٍ من ظباءِ وَجْرةَ معها طفلُها، لأن عينَي الظبية تكونان في غايةِ الجمال إذا نظرَت إلى أولادها نظرةَ العطف والشفقة</Typography>
                     </div>
-                    <div className={styles.said}>
+                    <Link href='/poetry' className={styles.said}>
                       <div className={styles.title}>
                         <Typography>يقول</Typography>
                       </div>
@@ -328,7 +332,8 @@ const Verses = () => {
                         <Typography>تَصُــدُّ وتُبْــدي عَن أَسِيــــلٍ وتَتَّقـي <br />
                           بِناظِرَةٍ من وَحشِ وَجْرَةَ مُطْفِلِ</Typography>
                       </div>
-                    </div>
+                    </Link>
+
                   </div>
                 </div>
                 <div className={styles.box}>
@@ -351,7 +356,7 @@ const Verses = () => {
                     <div className={styles.desc}>
                       <Typography>ذكرها امرؤُ القيسِ في معلَّقته، عندما وصفَ محبوبته بأنها تنظرُ إليه بعينِ ظبيةٍ من ظباءِ وَجْرةَ معها طفلُها، لأن عينَي الظبية تكونان في غايةِ الجمال إذا نظرَت إلى أولادها نظرةَ العطف والشفقة</Typography>
                     </div>
-                    <div className={styles.said}>
+                    <Link href='/poetry' className={styles.said}>
                       <div className={styles.title}>
                         <Typography>يقول</Typography>
                       </div>
@@ -359,7 +364,8 @@ const Verses = () => {
                         <Typography>تَصُــدُّ وتُبْــدي عَن أَسِيــــلٍ وتَتَّقـي <br />
                           بِناظِرَةٍ من وَحشِ وَجْرَةَ مُطْفِلِ</Typography>
                       </div>
-                    </div>
+                    </Link>
+
                   </div>
                 </div>
                 <div className={styles.box}>
@@ -382,7 +388,7 @@ const Verses = () => {
                     <div className={styles.desc}>
                       <Typography>ذكرها امرؤُ القيسِ في معلَّقته، عندما وصفَ محبوبته بأنها تنظرُ إليه بعينِ ظبيةٍ من ظباءِ وَجْرةَ معها طفلُها، لأن عينَي الظبية تكونان في غايةِ الجمال إذا نظرَت إلى أولادها نظرةَ العطف والشفقة</Typography>
                     </div>
-                    <div className={styles.said}>
+                    <Link href='/poetry' className={styles.said}>
                       <div className={styles.title}>
                         <Typography>يقول</Typography>
                       </div>
@@ -390,9 +396,12 @@ const Verses = () => {
                         <Typography>تَصُــدُّ وتُبْــدي عَن أَسِيــــلٍ وتَتَّقـي <br />
                           بِناظِرَةٍ من وَحشِ وَجْرَةَ مُطْفِلِ</Typography>
                       </div>
-                    </div>
+                    </Link>
+
                   </div>
                 </div>
+
+
               </Carousel>
             </div>
 
