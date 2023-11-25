@@ -1,13 +1,5 @@
 
 import React, { useRef } from 'react';
-import { Navigation, Pagination, Grid } from 'swiper/modules';
-
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import 'swiper/css/grid';
-import { HiArrowLeft } from "react-icons/hi2";
-import { HiArrowRight } from "react-icons/hi2";
 
 import styles from './index.module.scss'; // Make sure this path is correct
 import { Typography } from '@mui/material';
